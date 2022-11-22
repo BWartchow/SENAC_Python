@@ -1,3 +1,3 @@
 # Estruturas Condicionais
 Parte I - Básico: 
-If
+comando If
