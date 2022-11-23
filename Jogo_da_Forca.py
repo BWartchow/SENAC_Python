@@ -49,7 +49,7 @@ if dificuldade == 1:
     print(f"\nPALAVRA SORTEADA = {lista_secreta}\nNúmero de letras = {fim}")
     while erros > 0:
         while "_" in lista_secreta:
-            palpite = str(input("Palpite: ")).upper().split()[0]
+            palpite = str(input("Palpite: ")).upper().strip()[0]
             jogada = palavra.find(palpite)
             if jogada >= 0:
                 print("Tem essa letra!!!")
@@ -92,7 +92,7 @@ elif dificuldade == 2:
     print(f"\nPALAVRA SORTEADA = {lista_secreta}\nNúmero de letras = {fim}")
     while erros > 0:
         while "_" in lista_secreta:
-            palpite = str(input("Palpite: ")).upper().split()[0]
+            palpite = str(input("Palpite: ")).upper().strip()[0]
             jogada = palavra.find(palpite)
             if jogada >= 0:
                 print("Tem essa letra!!!")
@@ -135,7 +135,7 @@ elif dificuldade == 3:
     print(f"\nPALAVRA SORTEADA = {lista_secreta}\nNúmero de letras = {fim}")
     while erros > 0:
         while "_" in lista_secreta:
-            palpite = str(input("Palpite: ")).upper().split()[0]
+            palpite = str(input("Palpite: ")).upper().strip()[0]
             jogada = palavra.find(palpite)
             if jogada >= 0:
                 print("Tem essa letra!!!")
@@ -158,4 +158,3 @@ elif dificuldade == 3:
             print(f"A palavra era {palavra_original}, parabéns!")
             break
     print('Fim')
-
